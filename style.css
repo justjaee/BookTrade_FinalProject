@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+.header-image {
+  margin-bottom: 20px;
+}
+
+.middle-image {
+  position: relative;
+  margin-bottom: 20px;
+  display: grid;
+ 
+}
+
+.about-us {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    transform: translate(0, -50%);
+    width: 40%;
+    background-color: (255, 255, 255, 0.7);
+    padding: 20px;
+}
+
+/* Blue Button */
+
+.more-button {
+    background-color: blue;
+    color: white;
+    border-color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.15s, color 0.2s;
+    display: inline-block;
+    padding: 12px;
+}
+
+.more-button:hover {
+  background-color: rgb(235, 202, 207);
+  color: black;
+  border-color: black;
+  opacity: 0.8;
+}
+
+.more-button:active {
+  opacity: 0.3;
+  border-color: black;
+}
+
+.our-mission {
+  position: absolute;
+  top: 90%;
+  left: 8%;
+  transform: translate(0, -50%);
+  width: 40%;
+}
+
+
+.college-book-exchange {
+  position: absolute;
+    bottom: -75%;
+    left: 8%;
+    width: 40%;
+    padding: 50px;
+}
+
+
+
+
+.steps {
+  position: absolute;
+  top: 180%;
+  left: 8%;
+  transform: translate(0, -50%);
+  width: 80%;
+  background-color: (255, 255, 255, 0.7);
+  padding: 20px;
+}
+
+@media (max-width: 2000px) {
+ 
+}
+
+@media (min-width: 600px) {
+ 
+}
+
+
