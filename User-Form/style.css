@@ -8,6 +8,11 @@
   margin-bottom: 30px;
 }
 
+.forgot-link {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+}
+
 h1,
 h2 {
   margin-top: 0;
@@ -40,8 +45,4 @@ button {
 
 .required {
   color: red;
-}
-
-.error {
-  border: 1px solid red;
 }
