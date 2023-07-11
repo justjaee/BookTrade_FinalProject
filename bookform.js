@@ -6,7 +6,7 @@ const bookCards = document.getElementById('bookCards');
 bookForm.addEventListener('submit', function(event) {
   event.preventDefault(); // prevents the refresh
 
-  // this will get the values from the form aka the img/price/title
+  // this will get the values from the form 
   const imageUrl = document.getElementById('imageUrl').value;
   const price = document.getElementById('price').value;
   const bookTitle = document.getElementById('bookTitle').value;
@@ -20,7 +20,7 @@ bookForm.addEventListener('submit', function(event) {
   image.src = imageUrl;
   card.appendChild(image);
 
-  const cardBody = document.createElement('div');
+ const cardBody = document.createElement('div');
   cardBody.classList.add('card-body');
 
   const title = document.createElement('h5');
@@ -36,6 +36,7 @@ bookForm.addEventListener('submit', function(event) {
   // Appending the card 2 the bookCards area
   bookCards.appendChild(card);
 
-  // Clear the form inputs after a sumbit 
+  // Clear the form inputs after a submit
   bookForm.reset();
 });
+
