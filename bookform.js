@@ -1,8 +1,6 @@
-// this gets element [from html] (by ID) and assigns it to var
 const bookForm = document.getElementById('bookForm');
 const bookCards = document.getElementById('bookCards');
 
-// when form is submitted this will run 
 bookForm.addEventListener('submit', function(event) {
   event.preventDefault(); // prevents the refresh
 
@@ -36,7 +34,7 @@ bookForm.addEventListener('submit', function(event) {
   // Appending the card 2 the bookCards area
   bookCards.appendChild(card);
 
-  // Clear the form inputs after a submit
+  // Clear the form inputs after a s
   bookForm.reset();
 });
 
