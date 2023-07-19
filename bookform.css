@@ -1,0 +1,31 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  font-family: 'Sriracha', cursive;;
+}
+form {
+  padding: 50px 250px;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card h5 {
+  margin-top: 10px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
