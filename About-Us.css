@@ -9,105 +9,23 @@ p {
     line-height: 1.5;
   }
 
-.header-image {
-  display: inline-block;
-}
-
-.middle-image {
-  display: inline-block;
-}
-
-.last-image {
-  display: incline-block;
-}
- 
-.about-us {
-  display: block;
-    transform: translate(0, -50%);
-    width: 40%;
-    background-color: (255, 255, 255, 0.7);
-    padding: 50px;
-}
-
-/* Blue Button */
-.more-button {
-    background-color: blue;
-    color: white;
-    border-color: black;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.15s, color 0.2s;
-    display: inline-block;
-    padding: 12px;
-}
-
-.more-button:hover {
-  background-color: rgb(235, 202, 207);
-  color: black;
-  border-color: black;
-  opacity: 0.8;
-}
-
-.more-button:active {
-  opacity: 0.3;
-  border-color: black;
-}
-
-.our-mission {
-  display: inline-block;
-  transform: translate(0, -50%);
-  width: 50%;
-  padding: 50px
-}
-
-.college-book-exchange {
-  display: inline-block;
-  transform: translate(0, -50%);
-  width: 50%;
-  padding: 50px;
-}
-
-
-.steps {
-  position: absolute;
-  top: 180%;
-  left: 8%;
-  transform: translate(0, -50%);
-  width: 80%;
-  background-color: (255, 255, 255, 0.7);
-  padding: 20px;
-}
-
-@media (max-width: 2000px) {
- 
-}
-
-@media (min-width: 600px) {
-  .header-image {
-    display: inline;
+  .header-container {
     margin-bottom: 20px;
-  }
-  
-  .middle-image {
-    display: inline;
-  }
-  
-  .last-image {
-    display: incline;
-  }
-   
-  .about-us {
-
-      transform: translate(0, -50%);
-      width: 40%;
+    }
+    
+    .first-image {
+      width: 100%;
+    }
+    .about-us {
+      width: 50%;
+      padding-top: 0;
+      padding-left: 150px;
+      bottom: 0;
       background-color: (255, 255, 255, 0.7);
-      padding: 50px;
-  }
-  
-  /* Blue Button */
-  .more-button {
+    }
+    /* Blue Button */
+    
+    .more-button {
       background-color: blue;
       color: white;
       border-color: black;
@@ -118,31 +36,46 @@ p {
       transition: background-color 0.15s, color 0.2s;
       display: inline-block;
       padding: 12px;
-  }
-  
-  .more-button:hover {
+    }
+    
+    .more-button:hover {
     background-color: rgb(235, 202, 207);
     color: black;
     border-color: black;
     opacity: 0.8;
-  }
-  
-  .more-button:active {
+    }
+    
+    .more-button:active {
     opacity: 0.3;
     border-color: black;
-  }
-  
-  .our-mission {
-    transform: translate(0, -50%);
-    width: 50%;
-    padding: 50px
-  }
-  
-  .college-book-exchange {
-    transform: translate(0, -50%);
-    width: 50%;
-    padding: 50px;
-  }
-}
-
-
+    }
+    
+    /* Middle-Container */
+    .middle-container {
+      margin-bottom: 20px;
+    }
+    .second-image {
+      width: 100%;
+    }
+    .our-mission {
+      width: 50%;
+      padding-top: 0;
+      padding-left: 150px;
+      bottom: 0;
+      background-color: (255, 255, 255, 0.7);
+    }
+    
+    .last-container {
+      margin-bottom: 20px;
+    }
+    .third-image {
+      width: 100%;
+    }
+    .college-book-exchange {
+      width: 50%;
+      padding-top: 0;
+      padding-left: 150px;
+      left: 30px;
+      bottom: 0;
+      background-color: (255, 255, 255, 0.7);
+    }

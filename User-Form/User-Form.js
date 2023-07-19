@@ -51,6 +51,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
   // Redirect to the mainpage if the email and password are valid
   if (email && password) {
-    window.location.href = 'mainpage.html'
+    window.location.href = '../mainpage.html'
   }
 });
