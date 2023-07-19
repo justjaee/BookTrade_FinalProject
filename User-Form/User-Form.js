@@ -26,8 +26,14 @@ document.getElementById('studentForm').addEventListener('submit', function(event
   // Clear the form inputs
   document.getElementById('firstName').value = '';
   document.getElementById('lastName').value = '';
-  document.getElementById('email').value = '';
   document.getElementById('studentID').value = '';
   document.getElementById('school').value = '';
   document.getElementById('major').value = '';
+
+  // Remove the email field from the DOM
+  var emailInput = document.getElementById('email');
+  emailInput.style.display = 'none';
+  // Reset the form to clear the email field value and show the email field again
+  document.getElementById('studentForm').reset();
+  emailInput.style.display = 'block'; // Show the email field again after resetting the form
 });
