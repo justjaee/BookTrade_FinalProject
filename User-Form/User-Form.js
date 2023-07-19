@@ -1,9 +1,3 @@
-// LOGIN FUNCTION IS EMPTY  !!!!
-
-// Below only for the Student Information
-
-
-
 document.getElementById('studentForm').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevents the default form submission
 
@@ -33,7 +27,30 @@ document.getElementById('studentForm').addEventListener('submit', function(event
   // Remove the email field from the DOM
   var emailInput = document.getElementById('email');
   emailInput.style.display = 'none';
+
   // Reset the form to clear the email field value and show the email field again
   document.getElementById('studentForm').reset();
   emailInput.style.display = 'block'; // Show the email field again after resetting the form
+
+  // Show pop-up notification
+  alert("✅ Congratulations! You have been registered.");
+});
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevents the default form submission
+
+  // Retrieve the values entered in the form
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+
+  // Validate the email and password (you can add your own validation logic here)
+
+  // Clear the username and password fields
+  document.getElementById('email').value = '';
+  document.getElementById('password').value = '';
+
+  // Redirect to the mainpage if the email and password are valid
+  if (email && password) {
+    window.location.href = ''
+  }
 });
