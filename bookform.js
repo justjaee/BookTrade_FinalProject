@@ -8,6 +8,7 @@ bookForm.addEventListener('submit', function(event) {
   const imageUrl = document.getElementById('imageUrl').value;
   const price = document.getElementById('price').value;
   const bookTitle = document.getElementById('bookTitle').value;
+  const bookAuthor = document.getElementById('bookAuthor').value
 
   // element for the card to populate below the form
   const card = document.createElement('div');
@@ -38,3 +39,30 @@ bookForm.addEventListener('submit', function(event) {
   bookForm.reset();
 });
 
+  // Make a call to the API
+  // POST request getting data from the api created in intellij
+
+  // link is to SQL but i need to link api instead
+  const apiUrl = '?';
+
+  fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      imageUrl: imageUrl,
+      price: price,
+      bookTitle: bookTitle,
+      bookAuthor: bookAuthor
+    })
+  })
+    .then(response => response.json())
+    .then(data => {
+      // confused about this point | api response will come through
+      console.log(data);
+    })
+    .catch(error => {
+      // So this will make sure that if any errors occur during the request itll give msg error
+      console.error('Error:', error);
+    });
